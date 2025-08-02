@@ -26,3 +26,9 @@
 .detailHeader {
   text-align: center;
 }
+
+.centeredContainer {
+  max-width: 640px;
+  margin: 120px auto;
+  text-align: center;
+}

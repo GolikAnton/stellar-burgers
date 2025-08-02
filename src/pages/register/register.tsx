@@ -21,7 +21,7 @@ export const Register: FC = () => {
       password: password
     };
     dispatch(userRegister(newUserData));
-    navigate('/');
+    navigate('/profile');
   };
 
   return (
