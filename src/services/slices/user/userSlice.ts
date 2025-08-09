@@ -8,7 +8,7 @@ import {
   userUpdate
 } from './userActions';
 
-type TStateUser = {
+export type TStateUser = {
   isAuthChecked: boolean;
   isAuthenticated: boolean;
   user: TUser | null;
