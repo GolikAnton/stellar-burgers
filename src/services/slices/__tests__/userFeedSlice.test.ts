@@ -88,7 +88,7 @@ describe('userFeedSlice тесты', () => {
       expect(state).toEqual({
         ...initialState,
         loading: false,
-        error: 'Ошибка загрузки заказов' 
+        error: 'Ошибка загрузки заказов'
       });
     });
   });

@@ -1,0 +1,48 @@
+{
+  "success": true,
+  "data": [
+    {
+      "_id": "ing1",
+      "name": "Булка",
+      "type": "bun",
+      "proteins": 80,
+      "fat": 24,
+      "carbohydrates": 53,
+      "calories": 420,
+      "price": 100,
+      "image": "image-bun.png",
+      "image_mobile": "image-bun-mobile.png",
+      "image_large": "image-bun-large.png",
+      "__v": 0
+    },
+    {
+      "_id": "ing2",
+      "name": "Начинка",
+      "type": "main",
+      "proteins": 50,
+      "fat": 20,
+      "carbohydrates": 30,
+      "calories": 300,
+      "price": 80,
+      "image": "image-main.png",
+      "image_mobile": "image-main-mobile.png",
+      "image_large": "image-main-large.png",
+      "__v": 0
+    },
+    {
+      "_id": "ing3",
+      "name": "Соус",
+      "type": "sauce",
+      "proteins": 10,
+      "fat": 30,
+      "carbohydrates": 10,
+      "calories": 30,
+      "price": 180,
+      "image": "image-main.png",
+      "image_mobile": "image-main-mobile.png",
+      "image_large": "image-main-large.png",
+      "__v": 0
+    }
+
+  ]
+}

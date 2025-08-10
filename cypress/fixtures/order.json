@@ -1,0 +1,63 @@
+{
+  "success": true,
+  "name": "Test Burger",
+  "order": {
+    "ingridients": [
+        {
+            "_id": "ing1",
+            "name": "Булка",
+            "type": "bun",
+            "proteins": 80,
+            "fat": 24,
+            "carbohydrates": 53,
+            "calories": 420,
+            "price": 100,
+            "image": "image-bun.png",
+            "image_mobile": "image-bun-mobile.png",
+            "image_large": "image-bun-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "ing2",
+            "name": "Начинка",
+            "type": "main",
+            "proteins": 50,
+            "fat": 20,
+            "carbohydrates": 30,
+            "calories": 300,
+            "price": 80,
+            "image": "image-main.png",
+            "image_mobile": "image-main-mobile.png",
+            "image_large": "image-main-large.png",
+             "__v": 0
+        },
+        {
+            "_id": "ing1",
+            "name": "Булка",
+            "type": "bun",
+            "proteins": 80,
+            "fat": 24,
+            "carbohydrates": 53,
+            "calories": 420,
+            "price": 100,
+            "image": "image-bun.png",
+            "image_mobile": "image-bun-mobile.png",
+            "image_large": "image-bun-large.png",
+            "__v": 0
+        }
+    ],
+    "_id": "123ksadjkla234345",
+    "owner": {
+        "name": "Test User",
+        "email": "test@example.com",
+        "createdAt": "2025-10-08",
+        "updatedAt": "2025-10-08"
+    },
+    "status": "done",
+    "name": "Test Burger",
+    "createdAt": "2025-10-08",
+    "updatedAt": "2025-10-08",
+    "number": 12345,
+    "price":1234
+  }
+}
