@@ -9,6 +9,7 @@ import {
   userInfoSlice,
   TStateUser
 } from '@slices';
+import { initialState } from '../user/userSlice';
 
 // Моковые данные
 const mockUser = {
@@ -35,13 +36,13 @@ const mockUpdatedUser = {
   }
 };
 
-const initialState: TStateUser = {
-  isAuthChecked: false,
-  isAuthenticated: false,
-  user: null,
-  loginUserError: null,
-  loginUserRequest: false
-};
+// const initialState: TStateUser = {
+//   isAuthChecked: false,
+//   isAuthenticated: false,
+//   user: null,
+//   loginUserError: null,
+//   loginUserRequest: false
+// };
 
 describe('userSlice reducers', () => {
   it('should return initial state', () => {

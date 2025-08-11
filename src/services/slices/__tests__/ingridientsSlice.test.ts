@@ -1,5 +1,6 @@
 import { getIngredients, ingredientsSlice, TIngredientsState } from '@slices';
 import type { TIngredient } from '@utils-types';
+import { initialState } from '../ingredients/ingredientsSlice';
 
 // Моковые данные
 const mockIngredients: TIngredient[] = [
@@ -32,12 +33,6 @@ const mockIngredients: TIngredient[] = [
 ];
 
 describe('ingredientsSlice', () => {
-  const initialState: TIngredientsState = {
-    ingredients: [],
-    loading: false,
-    error: null
-  };
-
   it('should handle initial state', () => {
     expect(ingredientsSlice.reducer(undefined, { type: 'unknown' })).toEqual(
       initialState

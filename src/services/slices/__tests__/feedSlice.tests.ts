@@ -1,13 +1,7 @@
-import { getAllFeeds, getOrderByNumber, TFeedState, feedSlice } from '@slices';
+import { getAllFeeds, getOrderByNumber, feedSlice, TFeedState } from '@slices';
+import { getInitialState } from '../feed/feedSlice';
 
-const initialState: TFeedState = {
-  orders: [],
-  total: 0,
-  totalToday: 0,
-  error: null,
-  loading: false,
-  orderByNumber: null
-};
+const initialState = getInitialState();
 
 const mockFeedResponse = {
   success: true,
@@ -44,7 +38,7 @@ describe('feedSlice тесты', () => {
   describe('getAllFeeds экшен', () => {
     it('pending: сбрасывает ошибку и устанавливает loading', () => {
       const state = feedSlice.reducer(
-        { ...initialState, error: 'Ошибка' },
+        { ...initialState, error: 'Ошибка' } as TFeedState,
         getAllFeeds.pending('')
       );
 

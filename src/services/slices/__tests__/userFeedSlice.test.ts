@@ -1,5 +1,6 @@
 import { userFeed, userFeedSlice, type TUserFeedState } from '@slices';
 import type { TOrder } from '@utils-types';
+import { initialState } from '../userFeed/userFeedSlice';
 
 // Моковые данные
 const mockOrders: TOrder[] = [
@@ -22,12 +23,6 @@ const mockOrders: TOrder[] = [
     number: 2
   }
 ];
-
-const initialState: TUserFeedState = {
-  orders: [],
-  error: null,
-  loading: false
-};
 
 describe('userFeedSlice тесты', () => {
   describe('initial state', () => {

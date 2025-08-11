@@ -8,7 +8,7 @@ export type TUserFeedState = {
   loading: boolean;
 };
 
-const initialState: TUserFeedState = {
+export const initialState: TUserFeedState = {
   orders: [],
   error: null,
   loading: false

@@ -2,7 +2,21 @@ export * from './user/userSlice';
 export * from './user/userActions';
 
 export { default as burgerConstructorReducer } from './burgerConstructor/burgerConstructorSlice';
-export * from './burgerConstructor/burgerConstructorSlice';
+export {
+  getInitialState as getBurgerConstructorInitialState,
+  initialState,
+  getConstructorItems,
+  getOrderRequest,
+  getOrderModalData,
+  getLoading,
+  getError,
+  addIngredient,
+  removeIngredient,
+  moveUpIngredient,
+  moveDownIngredient,
+  clearOrder
+} from './burgerConstructor/burgerConstructorSlice';
+
 export * from './burgerConstructor/burgerConstructorActions';
 
 export { default as ingredientsReducer } from './ingredients/ingredientsSlice';
