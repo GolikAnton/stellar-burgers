@@ -13,7 +13,7 @@ type TBurgerConstructorState = {
   error: null | string | undefined;
 };
 
-const initialState: TBurgerConstructorState = {
+export const initialState: TBurgerConstructorState = {
   constructorItems: {
     bun: null,
     ingredients: []
@@ -23,6 +23,17 @@ const initialState: TBurgerConstructorState = {
   loading: false,
   error: null
 };
+
+export const getInitialState = () => ({
+  constructorItems: {
+    bun: null,
+    ingredients: []
+  },
+  orderRequest: false,
+  orderModalData: null,
+  loading: false,
+  error: null
+});
 
 export const burgerConstructorSlice = createSlice({
   name: 'burgerConstructor',

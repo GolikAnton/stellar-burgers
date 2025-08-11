@@ -8,7 +8,7 @@ import {
   userUpdate
 } from './userActions';
 
-type TStateUser = {
+export type TStateUser = {
   isAuthChecked: boolean;
   isAuthenticated: boolean;
   user: TUser | null;
@@ -16,7 +16,7 @@ type TStateUser = {
   loginUserRequest: boolean;
 };
 
-const initialState: TStateUser = {
+export const initialState: TStateUser = {
   isAuthChecked: false,
   isAuthenticated: false,
   user: null,
